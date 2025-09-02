@@ -1,8 +1,10 @@
-# Welcome to your Lovable project
+# Clube de Benefícios Pagaleve
 
-## Project info
+## Sobre o Projeto
 
-**URL**: https://lovable.dev/projects/4ed69fac-4ca2-42bc-8c5a-d258deb921bb
+Landing page do Clube de Benefícios Pagaleve - Um programa exclusivo com condições especiais em ferramentas essenciais para lojistas acelerar seu e-commerce.
+
+**URL do Projeto**: https://lovable.dev/projects/4ed69fac-4ca2-42bc-8c5a-d258deb921bb
 
 ## How can I edit this code?
 

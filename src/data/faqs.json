@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "pergunta": "O que é o Clube de Benefícios Pagaleve?",
+    "resposta": "É um programa exclusivo com vantagens e condições especiais em soluções parceiras para lojistas Pagaleve. Oferecemos descontos, isenções de taxas e benefícios em ferramentas essenciais para acelerar seu e-commerce."
+  },
+  {
+    "id": "2",
+    "pergunta": "Como descubro meu tier de elegibilidade?",
+    "resposta": "Seu tier aparece no dashboard Pagaleve, na seção 'Meu Perfil'. Caso tenha dúvidas, entre em contato com nosso time de suporte ou seu gerente de contas."
+  },
+  {
+    "id": "3",
+    "pergunta": "Como resgatar um benefício?",
+    "resposta": "É simples! Navegue pelo catálogo, encontre o benefício desejado, clique no card para ver os detalhes e siga as instruções de resgate. Alguns benefícios usam cupons, outros links especiais ou formulários."
+  },
+  {
+    "id": "4",
+    "pergunta": "O benefício vale para todas as lojas da minha rede?",
+    "resposta": "Depende do parceiro e do tipo de benefício. Consulte os detalhes de cada oferta para verificar se há restrições. Em geral, benefícios são por CNPJ, mas alguns parceiros oferecem condições para grupos empresariais."
+  },
+  {
+    "id": "5",
+    "pergunta": "Até quando os benefícios ficam ativos?",
+    "resposta": "Os benefícios desta fase inaugural ficam ativos por 6 meses a partir do lançamento (01/11/2025 a 30/04/2026). Após esse período, novos benefícios podem ser disponibilizados."
+  },
+  {
+    "id": "6",
+    "pergunta": "Posso transferir um benefício para outra empresa?",
+    "resposta": "Não, os benefícios são intransferíveis e vinculados ao CNPJ elegível cadastrado na Pagaleve. Cada empresa deve resgatar seus próprios benefícios."
+  },
+  {
+    "id": "7",
+    "pergunta": "Como falar com o suporte sobre os benefícios?",
+    "resposta": "Use o formulário de contato nesta página ou entre em contato com seu gerente de contas Pagaleve. Para questões específicas sobre um parceiro, consulte o contato disponível no detalhe de cada benefício."
+  },
+  {
+    "id": "8",
+    "pergunta": "Minha empresa pode se tornar parceira do clube?",
+    "resposta": "Sim! Se sua empresa oferece soluções relevantes para e-commerce, adoraríamos tê-la como parceira. Clique em 'Quero oferecer um benefício' e preencha o formulário de interesse."
+  }
+]

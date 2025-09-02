@@ -1,0 +1,50 @@
+{
+  "tiers": [
+    {
+      "id": "T1",
+      "nome": "Embaixadores",
+      "descricao": "Clientes estratégicos, promotores e parceiros que co-criam com a Pagaleve",
+      "beneficios": [
+        "Acesso a todos os benefícios exclusivos",
+        "Condições especiais e personalizadas",
+        "Suporte prioritário dos parceiros",
+        "Eventos e experiências exclusivas"
+      ],
+      "empresasDestaque": [
+        "Pandora",
+        "Blueman",
+        "Tok&Stok",
+        "Grupo Soma",
+        "Crocs",
+        "Reserva",
+        "Hering",
+        "Ri Happy"
+      ],
+      "cor": "tier-1"
+    },
+    {
+      "id": "T2",
+      "nome": "Alta Performance",
+      "descricao": "Top 20% de TPV em cada carteira",
+      "beneficios": [
+        "Benefícios premium selecionados",
+        "Descontos especiais em ferramentas essenciais",
+        "Prioridade no atendimento"
+      ],
+      "empresasDestaque": [],
+      "cor": "tier-2"
+    },
+    {
+      "id": "T3",
+      "nome": "Base Ativa",
+      "descricao": "Lojistas ativos da Pagaleve que atendem aos critérios operacionais mínimos",
+      "beneficios": [
+        "Acesso aos benefícios essenciais",
+        "Condições especiais em parceiros selecionados",
+        "Suporte padrão"
+      ],
+      "empresasDestaque": [],
+      "cor": "tier-3"
+    }
+  ]
+}
