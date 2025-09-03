@@ -59,27 +59,6 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Visual Cards Preview */}
-          <div className="relative max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              {[
-                { color: "bg-primary/20", label: "CRM", discount: "20% OFF" },
-                { color: "bg-secondary/20", label: "Logística", discount: "15% OFF" },
-                { color: "bg-accent/20", label: "Marketing", discount: "3 meses grátis" },
-              ].map((card, index) => (
-                <div
-                  key={index}
-                  className={`${card.color} backdrop-blur-sm rounded-2xl p-6 transform hover:scale-105 transition-transform`}
-                >
-                  <div className="w-16 h-16 bg-background rounded-xl mb-4" />
-                  <p className="text-sm text-muted-foreground mb-2">{card.label}</p>
-                  <p className="font-heading font-bold text-lg text-foreground">
-                    {card.discount}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
