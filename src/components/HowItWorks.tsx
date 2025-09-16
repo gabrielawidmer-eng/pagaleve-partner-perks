@@ -52,7 +52,7 @@ const HowItWorks = () => {
                 </div>
 
               <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
-                Encontre o benefício
+                {step.title}
               </h3>
                 <p className="text-muted-foreground">
                   {step.description}
