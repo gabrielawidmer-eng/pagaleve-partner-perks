@@ -4,18 +4,18 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: CheckCircle,
-      title: "Verifique seu tier",
-      description: "Acesse o dashboard Pagaleve e confirme seu tier de elegibilidade",
-    },
-    {
-      icon: Search,
       title: "Encontre o benefício",
       description: "Navegue por segmento ou use a busca para achar a solução ideal",
     },
     {
+      icon: Search,
+      title: "Solicite o Benefício",
+      description: "Clique no botão, preencha suas informações e solicite seu benefício",
+    },
+    {
       icon: MousePointer,
-      title: "Acesse e resgate",
-      description: "Clique em 'Solicitar benefício' e siga as instruções de resgate",
+      title: "Acompanhe o e-mail",
+      description: "Te enviaremos um e-mail com as condições para resgatar o benefício",
     },
   ];
 
