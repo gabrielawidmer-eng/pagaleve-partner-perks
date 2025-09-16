@@ -118,18 +118,6 @@ const BenefitsCatalog = () => {
               {filteredBenefits.length} benefícios encontrados
             </div>
           </div>
-
-          {/* Featured Banner */}
-          <div className="bg-gradient-primary text-primary-foreground rounded-2xl p-6 mb-8">
-            <div className="flex items-center justify-between">
-              <div>
-                <h3 className="font-heading font-semibold text-xl mb-2">
-                  🎉 Empresas já confirmadas nesta fase
-                </h3>
-              </div>
-            </div>
-          </div>
-
           {/* Benefits Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredBenefits.map((benefit) => (
