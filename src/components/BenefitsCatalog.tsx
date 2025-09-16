@@ -126,9 +126,6 @@ const BenefitsCatalog = () => {
                 <h3 className="font-heading font-semibold text-xl mb-2">
                   🎉 Empresas já confirmadas nesta fase
                 </h3>
-                <p className="opacity-90">
-                  Nuvemshop, RD Station, Tiny, Loggi, Zenvia, Mailchimp, Clearsale, Octadesk e mais!
-                </p>
               </div>
             </div>
           </div>
