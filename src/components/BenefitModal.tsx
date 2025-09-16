@@ -189,7 +189,7 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
               size="lg"
               className="flex-1 bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full"
             >
-              Acessar benefício
+              Solicitar benefício
               <ExternalLink className="ml-2 w-5 h-5" />
             </Button>
             <Button
