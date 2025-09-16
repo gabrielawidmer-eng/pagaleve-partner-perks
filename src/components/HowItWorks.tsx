@@ -51,9 +51,9 @@ const HowItWorks = () => {
                   </div>
                 </div>
 
-                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
-                  {step.title}
-                </h3>
+              <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
+                Encontre o benefício
+              </h3>
                 <p className="text-muted-foreground">
                   {step.description}
                 </p>
