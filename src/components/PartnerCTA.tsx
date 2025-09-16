@@ -9,8 +9,6 @@ const PartnerCTA = () => {
       });
     }
   };
-  return <section className="py-20 bg-gradient-to-br from-primary/5 to-secondary/5">
-      
-    </section>;
+  return;
 };
 export default PartnerCTA;
