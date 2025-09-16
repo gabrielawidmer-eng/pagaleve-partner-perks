@@ -15,6 +15,19 @@ const Tiers = () => {
     T2: TrendingUp,
     T3: Users
   };
-  return;
+  return (
+    <section id="tiers" className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-4">
+            Tiers de Elegibilidade
+          </h2>
+          <p className="text-lg text-muted-foreground">
+            Benefícios exclusivos para cada nível de parceria
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 };
 export default Tiers;
