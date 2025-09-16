@@ -193,7 +193,7 @@ const BenefitsCatalog = () => {
                     handleCardClick(benefit);
                   }}
                 >
-                  Acessar benefício
+                  Solicitar benefício
                 </Button>
               </div>
             ))}

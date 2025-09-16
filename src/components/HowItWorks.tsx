@@ -15,7 +15,7 @@ const HowItWorks = () => {
     {
       icon: MousePointer,
       title: "Acesse e resgate",
-      description: "Clique em 'Acessar benefício' e siga as instruções de resgate",
+      description: "Clique em 'Solicitar benefício' e siga as instruções de resgate",
     },
   ];
 
