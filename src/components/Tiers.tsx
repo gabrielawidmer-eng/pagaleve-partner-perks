@@ -1,20 +1,24 @@
 import { Crown, TrendingUp, Users, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import tiersData from "@/data/tiers.json";
+
 const Tiers = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const ambassadorCompanies = tiersData.tiers[0].empresasDestaque;
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex(prev => (prev + 1) % Math.ceil(ambassadorCompanies.length / 4));
     }, 3000);
     return () => clearInterval(interval);
   }, [ambassadorCompanies.length]);
+  
   const tierIcons = {
     T1: Crown,
     T2: TrendingUp,
     T3: Users
   };
+
   return (
     <section id="tiers" className="py-20 relative bg-gradient-subtle">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 pointer-events-none" />
@@ -34,7 +38,7 @@ const Tiers = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {tiersData.tiers.map((tier, index) => {
-            const Icon = tierIcons[tier.nome as keyof typeof tierIcons];
+            const Icon = tierIcons[tier.id as keyof typeof tierIcons];
             return (
               <div 
                 key={tier.nome}
@@ -108,4 +112,5 @@ const Tiers = () => {
     </section>
   );
 };
+
 export default Tiers;
