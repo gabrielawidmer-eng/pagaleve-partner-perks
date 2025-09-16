@@ -41,15 +41,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center">
             <img 
               src="/src/assets/logo-pagaleve.png" 
               alt="Pagaleve" 
-              className="h-10 w-auto"
+              className="h-8 w-auto"
             />
-            <span className="font-heading font-bold text-xl text-foreground">
-              Central de Ajuda
-            </span>
           </div>
 
           {/* Desktop Navigation */}
