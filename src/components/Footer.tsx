@@ -36,6 +36,7 @@ const Footer = () => {
                     Como funciona
                   </a>
                 </li>
+                <li>
                   <a href="#beneficios" className="text-muted-foreground hover:text-primary transition-colors">
                     Catálogo de benefícios
                   </a>
