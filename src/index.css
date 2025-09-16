@@ -10,61 +10,61 @@
   :root {
     /* Core Colors */
     --background: 0 0% 100%;
-    --foreground: 220 13% 20%;
+    --foreground: 198 34% 14%; /* Grafite #192D37 */
     
     /* Pagaleve Brand Colors */
-    --primary: 270 50% 75%; /* Lilac */
+    --primary: 332 100% 50%; /* Rosa vibrante #FF009B */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 270 60% 85%;
-    --primary-dark: 270 45% 65%;
+    --primary-light: 332 100% 65%;
+    --primary-dark: 332 100% 40%;
     
-    --secondary: 174 42% 65%; /* Aqua Green */
+    --secondary: 213 100% 29%; /* Azul corporativo #004696 */
     --secondary-foreground: 0 0% 100%;
-    --secondary-light: 174 50% 75%;
-    --secondary-dark: 174 40% 55%;
+    --secondary-light: 213 90% 40%;
+    --secondary-dark: 213 100% 20%;
     
     /* UI Colors */
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 20%;
+    --card-foreground: 198 34% 14%; /* Grafite #192D37 */
     --card-hover: 0 0% 98%;
     
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 20%;
+    --popover-foreground: 198 34% 14%;
     
     --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    --muted-foreground: 198 20% 35%;
     
-    --accent: 270 50% 75%;
+    --accent: 145 100% 44%; /* Verde sucesso #00E16C */
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     
-    --success: 142 71% 45%;
+    --success: 145 100% 44%; /* Verde sucesso #00E16C */
     --success-foreground: 0 0% 100%;
     
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 100%;
     
-    --info: 217 91% 60%;
+    --info: 213 100% 29%; /* Azul corporativo */
     --info-foreground: 0 0% 100%;
     
     /* Borders & Inputs */
-    --border: 270 20% 92%;
-    --input: 270 20% 92%;
-    --ring: 270 50% 75%;
+    --border: 332 20% 92%;
+    --input: 332 20% 92%;
+    --ring: 332 100% 50%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(270 50% 75%), hsl(174 42% 65%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(270 30% 98%));
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(270 20% 99%));
+    --gradient-primary: linear-gradient(135deg, hsl(332 100% 50%), hsl(213 100% 29%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(332 30% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(332 20% 99%));
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(270 30% 50% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(270 30% 50% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(270 30% 50% / 0.1);
-    --shadow-xl: 0 20px 25px -5px hsl(270 30% 50% / 0.1);
-    --shadow-glow: 0 0 20px hsl(270 50% 75% / 0.3);
+    --shadow-sm: 0 1px 2px 0 hsl(332 30% 50% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(332 30% 50% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(332 30% 50% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(332 30% 50% / 0.1);
+    --shadow-glow: 0 0 20px hsl(332 100% 50% / 0.3);
     
     /* Border Radius */
     --radius: 1.5rem;
@@ -82,20 +82,20 @@
     --font-heading: 'Nunito', system-ui, -apple-system, sans-serif;
     
     /* Tier Colors */
-    --tier-1: 263 70% 65%; /* Purple */
-    --tier-2: 174 42% 65%; /* Aqua */
-    --tier-3: 220 14% 65%; /* Gray */
+    --tier-1: 332 100% 50%; /* Rosa Pagaleve */
+    --tier-2: 213 100% 29%; /* Azul Pagaleve */
+    --tier-3: 145 100% 44%; /* Verde Pagaleve */
   }
 
   .dark {
     --background: 222 47% 11%;
     --foreground: 0 0% 98%;
     
-    --primary: 270 50% 75%;
-    --primary-foreground: 270 50% 15%;
+    --primary: 332 100% 50%;
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 174 42% 65%;
-    --secondary-foreground: 174 42% 15%;
+    --secondary: 213 100% 29%;
+    --secondary-foreground: 0 0% 100%;
     
     --card: 222 47% 15%;
     --card-foreground: 0 0% 98%;

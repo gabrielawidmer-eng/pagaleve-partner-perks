@@ -42,11 +42,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">P</span>
-            </div>
+            <img 
+              src="/src/assets/logo-pagaleve.png" 
+              alt="Pagaleve" 
+              className="h-10 w-auto"
+            />
             <span className="font-heading font-bold text-xl text-foreground">
-              Pagaleve
+              Central de Ajuda
             </span>
           </div>
 
