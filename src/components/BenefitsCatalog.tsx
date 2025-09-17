@@ -128,10 +128,18 @@ const BenefitsCatalog = () => {
               >
                 {/* Logo/Company Initial */}
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-16 h-16 bg-muted rounded-xl flex items-center justify-center">
-                    <span className="text-2xl font-bold text-primary">
-                      {benefit.empresa.charAt(0)}
-                    </span>
+                  <div className="w-16 h-16 bg-muted rounded-xl flex items-center justify-center overflow-hidden">
+                    {benefit.logo ? (
+                      <img 
+                        src={benefit.logo} 
+                        alt={benefit.empresa}
+                        className="w-full h-full object-contain p-2"
+                      />
+                    ) : (
+                      <span className="text-2xl font-bold text-primary">
+                        {benefit.empresa.charAt(0)}
+                      </span>
+                    )}
                   </div>
                   <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
