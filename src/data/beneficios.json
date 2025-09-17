@@ -49,7 +49,7 @@
     "empresa": "Linx Commerce",
     "segmento": "Plataforma de E-commerce",
     "site": "https://www.loggi.com",
-    "logo": "/logos/loggi.png",
+    "logo": "src/assets/logo-linx-commerce.png",
     "beneficio": "Desconto de 25% no Setup, implantação e mensalidade.",
     "beneficioDetalhado": "Este benefício é válido nos planos FAST, FULL e OMNI.",
     "tiersElegiveis": ["T1", "T2"],
