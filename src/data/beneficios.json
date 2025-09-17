@@ -4,7 +4,7 @@
     "empresa": "Yampi",
     "segmento": "Plataforma e Tech",
     "site": "https://www.yampi.com.br/",
-    "logo": "/logos/nuvemshop.png",
+    "logo": "src/assets/logo-yampi.svg",
     "beneficio": "20% de desconto por 6 meses",
     "beneficioDetalhado": "Desconto de 20% em todos os planos da Nuvemshop durante 6 meses. Ideal para lojistas que querem criar ou migrar sua loja virtual.",
     "tiersElegiveis": ["T1", "T2", "T3"],
