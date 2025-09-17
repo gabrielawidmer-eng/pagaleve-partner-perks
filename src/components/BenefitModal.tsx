@@ -6,7 +6,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Copy, Check, Clock, MapPin, AlertCircle } from "lucide-react";
+import { ExternalLink, Check, Clock, MapPin, AlertCircle } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -24,6 +24,9 @@ interface Benefit {
   observacoes: string;
   ctaLink: string;
   cupom: string | null;
+  beneficiosPorTier?: {
+    [key: string]: string;
+  };
 }
 
 interface BenefitModalProps {
@@ -33,18 +36,7 @@ interface BenefitModalProps {
 }
 
 const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
-  const [copiedCoupon, setCopiedCoupon] = useState(false);
-
   if (!benefit) return null;
-
-  const handleCopyCoupon = () => {
-    if (benefit.cupom) {
-      navigator.clipboard.writeText(benefit.cupom);
-      setCopiedCoupon(true);
-      toast.success("Cupom copiado com sucesso!");
-      setTimeout(() => setCopiedCoupon(false), 3000);
-    }
-  };
 
   const handleAccessBenefit = () => {
     window.open(benefit.ctaLink, "_blank");
@@ -55,6 +47,12 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
     T1: "bg-tier-1",
     T2: "bg-tier-2",
     T3: "bg-tier-3",
+  };
+
+  const tierNames = {
+    T1: "Embaixadores",
+    T2: "Alta Performance",
+    T3: "Base Ativa",
   };
 
   return (
@@ -102,18 +100,28 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
 
           {/* Eligible Tiers */}
           <div>
-            <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+            <h4 className="font-semibold text-foreground mb-4 flex items-center gap-2">
               <MapPin className="w-5 h-5 text-primary" />
               Elegível para
             </h4>
-            <div className="flex gap-2">
+            <div className="space-y-3">
               {benefit.tiersElegiveis.map((tier) => (
-                <span
-                  key={tier}
-                  className={`${tierColors[tier as keyof typeof tierColors]} text-white px-4 py-2 rounded-full text-sm font-semibold`}
-                >
-                  Tier {tier.replace("T", "")}
-                </span>
+                <div key={tier} className="flex items-start gap-4">
+                  <div
+                    className={`${tierColors[tier as keyof typeof tierColors]} w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}
+                  >
+                    {tier.replace("T", "")}
+                  </div>
+                  <div className="flex-1">
+                    <h5 className="font-semibold text-foreground mb-1">
+                      {tierNames[tier as keyof typeof tierNames]}
+                    </h5>
+                    <p className="text-sm text-muted-foreground">
+                      {benefit.beneficiosPorTier?.[tier] || 
+                       `Benefício disponível para clientes ${tierNames[tier as keyof typeof tierNames]}`}
+                    </p>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
@@ -129,37 +137,6 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
             </p>
           </div>
 
-          {/* Coupon */}
-          {benefit.cupom && (
-            <div>
-              <h4 className="font-semibold text-foreground mb-3">
-                Cupom de desconto
-              </h4>
-              <div className="bg-primary/10 border-2 border-dashed border-primary/30 rounded-xl p-4 flex items-center justify-between">
-                <span className="font-mono font-bold text-xl text-primary">
-                  {benefit.cupom}
-                </span>
-                <Button
-                  onClick={handleCopyCoupon}
-                  variant="outline"
-                  size="sm"
-                  className="rounded-full"
-                >
-                  {copiedCoupon ? (
-                    <>
-                      <Check className="w-4 h-4 mr-2" />
-                      Copiado!
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="w-4 h-4 mr-2" />
-                      Copiar
-                    </>
-                  )}
-                </Button>
-              </div>
-            </div>
-          )}
 
           {/* Validity */}
           <div>
