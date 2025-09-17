@@ -20,7 +20,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="como-funciona" className="py-20 bg-gradient-subtle">
+    <section id="como-funciona" className="py-20 bg-muted/10">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
@@ -39,7 +39,7 @@ const HowItWorks = () => {
               <div key={index} className="text-center">
                 <div className="relative">
                   {/* Step Number */}
-                  <div className="absolute -top-2 -left-2 w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center">
+                  <div className="absolute -top-2 -left-2 w-8 h-8 bg-primary rounded-full flex items-center justify-center">
                     <span className="text-primary-foreground font-bold text-sm">
                       {index + 1}
                     </span>

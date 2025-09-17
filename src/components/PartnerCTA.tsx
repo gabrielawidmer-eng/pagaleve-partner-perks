@@ -10,7 +10,7 @@ const PartnerCTA = () => {
     }
   };
   return (
-    <section className="py-20 bg-gradient-primary">
+    <section className="py-20 bg-primary">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <Building className="w-16 h-16 text-primary-foreground mx-auto mb-6" />

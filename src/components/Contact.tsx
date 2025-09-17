@@ -55,7 +55,7 @@ const Contact = () => {
 
               {/* Contact Cards */}
               <div className="space-y-4">
-                <div className="bg-gradient-card rounded-2xl p-6">
+                <div className="bg-muted rounded-2xl p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
                       <Mail className="w-6 h-6 text-primary" />
@@ -71,7 +71,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="bg-gradient-card rounded-2xl p-6">
+                <div className="bg-muted rounded-2xl p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center flex-shrink-0">
                       <Building2 className="w-6 h-6 text-secondary" />
@@ -157,7 +157,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full"
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full"
                 >
                   Enviar mensagem
                   <Send className="ml-2 w-5 h-5" />

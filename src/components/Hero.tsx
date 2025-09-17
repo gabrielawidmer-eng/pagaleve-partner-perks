@@ -11,8 +11,8 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-subtle" />
+      {/* Background */}
+      <div className="absolute inset-0 bg-background" />
       
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
@@ -29,7 +29,7 @@ const Hero = () => {
           {/* Headline */}
           <h1 className="font-heading font-black text-5xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
             Clube de Benefícios
-            <span className="block bg-gradient-primary bg-clip-text text-transparent">
+            <span className="block text-primary">
               Pagaleve
             </span>
           </h1>
@@ -44,7 +44,7 @@ const Hero = () => {
             <Button
               onClick={() => scrollToSection("beneficios")}
               size="lg"
-              className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-bold rounded-full px-10 py-6 text-lg shadow-glow"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-full px-10 py-6 text-lg shadow-glow"
             >
               Explorar benefícios
               <ArrowRight className="ml-2 w-5 h-5" />

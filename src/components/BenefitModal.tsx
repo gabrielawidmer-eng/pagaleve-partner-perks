@@ -62,7 +62,7 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-20 h-20 bg-gradient-card rounded-2xl flex items-center justify-center flex-shrink-0">
+            <div className="w-20 h-20 bg-muted rounded-2xl flex items-center justify-center flex-shrink-0">
               <span className="text-2xl font-bold text-primary">
                 {benefit.empresa.charAt(0)}
               </span>
@@ -91,7 +91,7 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
 
         <div className="space-y-6">
           {/* Benefit Description */}
-          <div className="bg-gradient-subtle rounded-xl p-6">
+          <div className="bg-muted/50 rounded-xl p-6">
             <h3 className="font-heading font-semibold text-xl text-foreground mb-3">
               {benefit.beneficio}
             </h3>
@@ -187,7 +187,7 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
             <Button
               onClick={handleAccessBenefit}
               size="lg"
-              className="flex-1 bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full"
+              className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full"
             >
               Solicitar benefício
               <ExternalLink className="ml-2 w-5 h-5" />

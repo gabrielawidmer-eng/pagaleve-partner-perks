@@ -4,7 +4,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-subtle border-t border-border">
+    <footer className="bg-muted/10 border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-6xl mx-auto">
           {/* Main Footer Content */}
@@ -12,7 +12,7 @@ const Footer = () => {
             {/* Brand */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center">
                   <span className="text-primary-foreground font-bold text-xl">P</span>
                 </div>
                 <span className="font-heading font-bold text-xl text-foreground">

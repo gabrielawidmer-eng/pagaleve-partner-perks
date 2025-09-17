@@ -67,7 +67,7 @@ const Header = () => {
             <Button
               onClick={() => scrollToSection("beneficios")}
               size="lg"
-              className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full px-8"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full px-8"
             >
               Ver benefícios
             </Button>
@@ -102,7 +102,7 @@ const Header = () => {
               <Button
                 onClick={() => scrollToSection("beneficios")}
                 size="lg"
-                className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full w-full mt-4"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full w-full mt-4"
               >
                 Ver benefícios
               </Button>

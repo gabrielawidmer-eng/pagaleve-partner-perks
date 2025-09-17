@@ -14,7 +14,7 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-20 bg-gradient-subtle">
+    <section id="faq" className="py-20 bg-muted/10">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           {/* Section Header */}

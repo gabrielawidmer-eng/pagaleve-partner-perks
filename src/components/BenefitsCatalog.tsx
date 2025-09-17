@@ -54,7 +54,7 @@ const BenefitsCatalog = () => {
   };
 
   return (
-    <section id="beneficios" className="py-20 bg-gradient-subtle">
+    <section id="beneficios" className="py-20 bg-muted/10">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
@@ -128,7 +128,7 @@ const BenefitsCatalog = () => {
               >
                 {/* Logo/Company Initial */}
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-16 h-16 bg-gradient-card rounded-xl flex items-center justify-center">
+                  <div className="w-16 h-16 bg-muted rounded-xl flex items-center justify-center">
                     <span className="text-2xl font-bold text-primary">
                       {benefit.empresa.charAt(0)}
                     </span>
@@ -172,7 +172,7 @@ const BenefitsCatalog = () => {
 
                 {/* CTA */}
                 <Button
-                  className="w-full mt-4 bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold rounded-full"
+                  className="w-full mt-4 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-full"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleCardClick(benefit);
