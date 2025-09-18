@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoPagaleve from "@/assets/logo-pagaleve.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,7 +44,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/src/assets/logo-pagaleve.png" 
+              src={logoPagaleve} 
               alt="Pagaleve" 
               className="h-8 w-auto"
             />
