@@ -25,7 +25,6 @@ const Header = () => {
 
   const menuItems = [
     { label: "Como funciona", id: "como-funciona" },
-    { label: "Tiers", id: "tiers" },
     { label: "Benefícios", id: "beneficios" },
     { label: "FAQ", id: "faq" },
     { label: "Fale com a gente", id: "contato" },
