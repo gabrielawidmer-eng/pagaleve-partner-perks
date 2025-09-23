@@ -36,7 +36,7 @@ const Hero = () => {
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto leading-relaxed">
-            Parcerias que potencializam seu e-commerce com condições exclusivas para quem é Pagaleve
+            Benefícios que potencializam seu e-commerce com condições exclusivas para quem é Pagaleve
           </p>
 
           {/* CTAs */}
