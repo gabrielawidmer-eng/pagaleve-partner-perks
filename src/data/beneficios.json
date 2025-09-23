@@ -16,8 +16,8 @@
   },
   {
     "id": "2",
-    "empresa": "RD Station",
-    "segmento": "CRM",
+    "empresa": "Alura",
+    "segmento": "Treinamentos",
     "site": "https://www.rdstation.com",
     "logo": "/logos/rdstation.png",
     "beneficio": "Isenção de taxa de setup + 15% off",
@@ -31,7 +31,7 @@
   },
   {
     "id": "3",
-    "empresa": "Tiny ERP",
+    "empresa": "Bonifiq",
     "segmento": "ERP",
     "site": "https://www.tiny.com.br",
     "logo": "/logos/tiny.png",
@@ -61,7 +61,7 @@
   },
   {
     "id": "5",
-    "empresa": "Zenvia",
+    "empresa": "PluggTo",
     "segmento": "IA e Chatbots",
     "site": "https://www.zenvia.com",
     "logo": "/logos/zenvia.png",
@@ -76,8 +76,8 @@
   },
   {
     "id": "6",
-    "empresa": "Mailchimp",
-    "segmento": "Marketing",
+    "empresa": "V10X",
+    "segmento": "Consultoria",
     "site": "https://mailchimp.com",
     "logo": "/logos/mailchimp.png",
     "beneficio": "50% off por 3 meses",
@@ -91,8 +91,8 @@
   },
   {
     "id": "7",
-    "empresa": "Clearsale",
-    "segmento": "Pagamentos e Antifraude",
+    "empresa": "Catus",
+    "segmento": "Agência de Performance",
     "site": "https://www.clearsale.com.br",
     "logo": "/logos/clearsale.png",
     "beneficio": "1º mês grátis + 20% de desconto",
