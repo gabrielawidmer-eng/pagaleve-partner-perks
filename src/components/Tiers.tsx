@@ -1,9 +1,15 @@
-import { Crown, TrendingUp, Users, ChevronRight } from "lucide-react";
+import { Crown, TrendingUp, Users, ChevronRight, Edit2, Save, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import tiersData from "@/data/tiers.json";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 const Tiers = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const ambassadorCompanies = tiersData.tiers[0]?.empresasDestaque || [];
+  const [tiers, setTiers] = useState(tiersData.tiers);
+  const [editingTier, setEditingTier] = useState<string | null>(null);
+  const [editedData, setEditedData] = useState<any>({});
+  const ambassadorCompanies = tiers[0]?.empresasDestaque || [];
   useEffect(() => {
     if (ambassadorCompanies.length > 0) {
       const interval = setInterval(() => {
@@ -16,6 +22,29 @@ const Tiers = () => {
     "Embaixadores": Crown,
     "Alta Performance": TrendingUp,
     "Base Ativa": Users
+  };
+
+  const handleEdit = (tier: any) => {
+    setEditingTier(tier.id);
+    setEditedData({
+      nome: tier.nome,
+      descricao: tier.descricao
+    });
+  };
+
+  const handleSave = (tierId: string) => {
+    setTiers(tiers.map(tier => 
+      tier.id === tierId 
+        ? { ...tier, ...editedData }
+        : tier
+    ));
+    setEditingTier(null);
+    setEditedData({});
+  };
+
+  const handleCancel = () => {
+    setEditingTier(null);
+    setEditedData({});
   };
   return (
     <section className="py-20 bg-background">
@@ -30,20 +59,74 @@ const Tiers = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {tiersData.tiers.map((tier) => {
+          {tiers.map((tier) => {
             const Icon = tierIcons[tier.nome as keyof typeof tierIcons];
+            const isEditing = editingTier === tier.id;
+            
             return (
               <div
-                key={tier.nome}
-                className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow"
+                key={tier.id}
+                className="bg-card border border-border rounded-lg p-6 hover:shadow-lg transition-shadow relative"
               >
+                {/* Edit Button */}
+                {!isEditing && (
+                  <Button
+                    onClick={() => handleEdit(tier)}
+                    size="sm"
+                    variant="ghost"
+                    className="absolute top-4 right-4 p-2"
+                  >
+                    <Edit2 className="w-4 h-4" />
+                  </Button>
+                )}
+                
+                {/* Action Buttons when editing */}
+                {isEditing && (
+                  <div className="absolute top-4 right-4 flex gap-2">
+                    <Button
+                      onClick={() => handleSave(tier.id)}
+                      size="sm"
+                      variant="ghost"
+                      className="p-2 text-green-600 hover:text-green-700"
+                    >
+                      <Save className="w-4 h-4" />
+                    </Button>
+                    <Button
+                      onClick={handleCancel}
+                      size="sm"
+                      variant="ghost"
+                      className="p-2 text-red-600 hover:text-red-700"
+                    >
+                      <X className="w-4 h-4" />
+                    </Button>
+                  </div>
+                )}
+                
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="font-heading font-bold text-2xl text-foreground">
-                    {tier.nome}
-                  </h3>
-                  <Icon className="w-8 h-8 text-primary" />
+                  {isEditing ? (
+                    <Input
+                      value={editedData.nome}
+                      onChange={(e) => setEditedData({...editedData, nome: e.target.value})}
+                      className="font-heading font-bold text-2xl w-3/4"
+                    />
+                  ) : (
+                    <h3 className="font-heading font-bold text-2xl text-foreground">
+                      {tier.nome}
+                    </h3>
+                  )}
+                  {!isEditing && <Icon className="w-8 h-8 text-primary" />}
                 </div>
-                <p className="text-muted-foreground mb-6">{tier.descricao}</p>
+                
+                {isEditing ? (
+                  <Textarea
+                    value={editedData.descricao}
+                    onChange={(e) => setEditedData({...editedData, descricao: e.target.value})}
+                    className="text-muted-foreground mb-6 min-h-[80px]"
+                  />
+                ) : (
+                  <p className="text-muted-foreground mb-6">{tier.descricao}</p>
+                )}
+                
                 <div>
                   <h4 className="font-semibold text-foreground mb-3">
                     Empresas Destaque:
