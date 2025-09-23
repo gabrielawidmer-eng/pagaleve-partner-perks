@@ -142,20 +142,6 @@ const BenefitsCatalog = () => {
                   </p>
                 </div>
 
-                {/* Tiers */}
-                <div className="flex gap-2 mb-4">
-                  {benefit.tiersElegiveis.map((tier) => (
-                    <span
-                      key={tier}
-                      className={`${
-                        tierColors[tier as keyof typeof tierColors]
-                      } px-3 py-1 rounded-full text-xs font-semibold`}
-                    >
-                      {tier}
-                    </span>
-                  ))}
-                </div>
-
                 {/* Validity */}
                 <p className="text-xs text-muted-foreground">
                   Válido até 30/04/2026
