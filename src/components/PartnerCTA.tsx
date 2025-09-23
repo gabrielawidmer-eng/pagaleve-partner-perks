@@ -9,6 +9,6 @@ const PartnerCTA = () => {
       });
     }
   };
-  return;
+  return null;
 };
 export default PartnerCTA;

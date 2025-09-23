@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-8 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-background" />
       
@@ -40,7 +40,7 @@ const Hero = () => {
           </p>
 
           {/* CTAs */}
-          <div className="flex justify-center mb-12">
+          <div className="flex justify-center mb-6">
             <Button
               onClick={() => scrollToSection("beneficios")}
               size="lg"
