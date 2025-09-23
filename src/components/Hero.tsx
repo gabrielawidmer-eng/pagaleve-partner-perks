@@ -27,9 +27,9 @@ const Hero = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="font-heading font-black text-5xl md:text-6xl lg:text-7xl text-foreground mb-6 leading-tight">
-            Clube de Benefícios
-            <span className="block text-primary">
+          <h1 className="font-heading font-black text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+            <span className="text-primary">Clube de Benefícios</span>
+            <span className="block text-foreground">
               Pagaleve
             </span>
           </h1>
