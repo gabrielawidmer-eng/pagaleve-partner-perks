@@ -20,6 +20,7 @@ import logoLinxCommerce from '@/assets/logo-linx-commerce.png';
 import logoPluggto from '@/assets/logo-pluggto.png';
 import logoV10x from '@/assets/logo-v10x.png';
 import logoCatus from '@/assets/logo-catus.png';
+import logoEstoca from '@/assets/logo-estoca.png';
 
 // Create logo mapping
 const logoMap: Record<string, string> = {
@@ -30,6 +31,7 @@ const logoMap: Record<string, string> = {
   'PluggTo': logoPluggto,
   'V10X': logoV10x,
   'Catus': logoCatus,
+  'Estoca': logoEstoca,
 };
 
 const BenefitsCatalog = () => {
