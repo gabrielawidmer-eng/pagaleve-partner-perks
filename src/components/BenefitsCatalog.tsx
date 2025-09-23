@@ -12,6 +12,26 @@ import {
 import BenefitModal from "./BenefitModal";
 import beneficiosData from "@/data/beneficios.json";
 
+// Import all logos
+import logoYampi from '@/assets/logo-yampi.svg';
+import logoAlura from '@/assets/logo-alura.png';
+import logoBonifiq from '@/assets/logo-bonifiq.png';
+import logoLinxCommerce from '@/assets/logo-linx-commerce.png';
+import logoPluggto from '@/assets/logo-pluggto.png';
+import logoV10x from '@/assets/logo-v10x.png';
+import logoCatus from '@/assets/logo-catus.png';
+
+// Create logo mapping
+const logoMap: Record<string, string> = {
+  'Yampi': logoYampi,
+  'Alura': logoAlura,
+  'Bonifiq': logoBonifiq,
+  'Linx Commerce': logoLinxCommerce,
+  'PluggTo': logoPluggto,
+  'V10X': logoV10x,
+  'Catus': logoCatus,
+};
+
 const BenefitsCatalog = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSegment, setSelectedSegment] = useState("all");
@@ -112,9 +132,9 @@ const BenefitsCatalog = () => {
                 {/* Logo/Company Initial */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-16 h-16 bg-muted rounded-xl flex items-center justify-center overflow-hidden">
-                    {benefit.logo && benefit.logo !== null ? (
+                    {logoMap[benefit.empresa] ? (
                       <img 
-                        src={benefit.logo.startsWith('src/') ? benefit.logo.replace('src/', '/') : benefit.logo} 
+                        src={logoMap[benefit.empresa]} 
                         alt={benefit.empresa}
                         className="w-full h-full object-contain p-2"
                       />

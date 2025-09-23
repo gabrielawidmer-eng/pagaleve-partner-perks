@@ -15,6 +15,26 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 
+// Import all logos
+import logoYampi from '@/assets/logo-yampi.svg';
+import logoAlura from '@/assets/logo-alura.png';
+import logoBonifiq from '@/assets/logo-bonifiq.png';
+import logoLinxCommerce from '@/assets/logo-linx-commerce.png';
+import logoPluggto from '@/assets/logo-pluggto.png';
+import logoV10x from '@/assets/logo-v10x.png';
+import logoCatus from '@/assets/logo-catus.png';
+
+// Create logo mapping
+const logoMap: Record<string, string> = {
+  'Yampi': logoYampi,
+  'Alura': logoAlura,
+  'Bonifiq': logoBonifiq,
+  'Linx Commerce': logoLinxCommerce,
+  'PluggTo': logoPluggto,
+  'V10X': logoV10x,
+  'Catus': logoCatus,
+};
+
 interface Benefit {
   id: string;
   empresa: string;
@@ -107,9 +127,9 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
             <DialogHeader>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-20 h-20 bg-muted rounded-2xl flex items-center justify-center flex-shrink-0">
-                  {benefit.logo && benefit.logo !== null ? (
+                  {logoMap[benefit.empresa] ? (
                     <img 
-                      src={benefit.logo.startsWith('src/') ? benefit.logo.replace('src/', '/') : benefit.logo} 
+                      src={logoMap[benefit.empresa]} 
                       alt={benefit.empresa}
                       className="w-full h-full object-contain p-3"
                     />
