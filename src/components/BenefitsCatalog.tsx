@@ -15,7 +15,7 @@ import beneficiosData from "@/data/beneficios.json";
 const BenefitsCatalog = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedSegment, setSelectedSegment] = useState("all");
-  const [selectedTier, setSelectedTier] = useState("all");
+  
   const [selectedBenefit, setSelectedBenefit] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -35,12 +35,9 @@ const BenefitsCatalog = () => {
       const matchesSegment =
         selectedSegment === "all" || benefit.segmento === selectedSegment;
 
-      const matchesTier =
-        selectedTier === "all" || benefit.tiersElegiveis.includes(selectedTier);
-
-      return matchesSearch && matchesSegment && matchesTier;
+      return matchesSearch && matchesSegment;
     });
-  }, [searchTerm, selectedSegment, selectedTier]);
+  }, [searchTerm, selectedSegment]);
 
   const handleCardClick = (benefit: any) => {
     setSelectedBenefit(benefit);
@@ -69,7 +66,7 @@ const BenefitsCatalog = () => {
 
           {/* Filters */}
           <div className="bg-card rounded-2xl p-6 shadow-lg mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Search */}
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -95,20 +92,6 @@ const BenefitsCatalog = () => {
                       {segment}
                     </SelectItem>
                   ))}
-                </SelectContent>
-              </Select>
-
-              {/* Tier Filter */}
-              <Select value={selectedTier} onValueChange={setSelectedTier}>
-                <SelectTrigger className="rounded-xl">
-                  <Tag className="w-4 h-4 mr-2" />
-                  <SelectValue placeholder="Todos os tiers" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">Todos os tiers</SelectItem>
-                  <SelectItem value="T1">Tier 1 - Embaixadores</SelectItem>
-                  <SelectItem value="T2">Tier 2 - Alta Performance</SelectItem>
-                  <SelectItem value="T3">Tier 3 - Base Ativa</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -202,7 +185,6 @@ const BenefitsCatalog = () => {
                 onClick={() => {
                   setSearchTerm("");
                   setSelectedSegment("all");
-                  setSelectedTier("all");
                 }}
                 variant="outline"
                 className="rounded-full"
