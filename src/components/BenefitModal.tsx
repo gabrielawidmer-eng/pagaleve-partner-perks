@@ -107,9 +107,17 @@ const BenefitModal = ({ benefit, isOpen, onClose }: BenefitModalProps) => {
             <DialogHeader>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-20 h-20 bg-muted rounded-2xl flex items-center justify-center flex-shrink-0">
-                  <span className="text-2xl font-bold text-primary">
-                    {benefit.empresa.charAt(0)}
-                  </span>
+                  {benefit.logo && benefit.logo !== null ? (
+                    <img 
+                      src={benefit.logo.startsWith('src/') ? benefit.logo.replace('src/', '/') : benefit.logo} 
+                      alt={benefit.empresa}
+                      className="w-full h-full object-contain p-3"
+                    />
+                  ) : (
+                    <span className="text-2xl font-bold text-primary">
+                      {benefit.empresa.charAt(0)}
+                    </span>
+                  )}
                 </div>
                 <div className="flex-1">
                   <DialogTitle className="text-2xl font-heading font-bold text-foreground mb-2">

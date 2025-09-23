@@ -112,9 +112,9 @@ const BenefitsCatalog = () => {
                 {/* Logo/Company Initial */}
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-16 h-16 bg-muted rounded-xl flex items-center justify-center overflow-hidden">
-                    {benefit.logo ? (
+                    {benefit.logo && benefit.logo !== null ? (
                       <img 
-                        src={benefit.logo} 
+                        src={benefit.logo.startsWith('src/') ? benefit.logo.replace('src/', '/') : benefit.logo} 
                         alt={benefit.empresa}
                         className="w-full h-full object-contain p-2"
                       />
