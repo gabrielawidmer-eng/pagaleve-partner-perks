@@ -40,7 +40,7 @@ const Hero = () => {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex justify-center mb-12">
             <Button
               onClick={() => scrollToSection("beneficios")}
               size="lg"
@@ -48,14 +48,6 @@ const Hero = () => {
             >
               Explorar benefícios
               <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button
-              onClick={() => scrollToSection("parceiro")}
-              size="lg"
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary/10 font-bold rounded-full px-10 py-6 text-lg"
-            >
-              Sou parceiro e quero participar
             </Button>
           </div>
 
