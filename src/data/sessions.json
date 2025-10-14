@@ -71,9 +71,9 @@
   },
   {
     "id": "ciberseguranca-tech",
-    "nome": "Diretoria de Tecnologia/Risco",
-    "cargo": "Especialistas em Cibersegurança",
-    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=security",
+    "nome": "Allan Pelais",
+    "cargo": "Head of CyberSecurity and IT na Pagaleve",
+    "foto": "/src/assets/allan.jpeg",
     "tema": "Consultoria em Cibersegurança",
     "pitch": "Proteja o que mais importa. Nosso time de segurança pode revisar seu site ou ambiente digital e indicar vulnerabilidades e boas práticas para proteger seu negócio e seus clientes.",
     "valores": [
