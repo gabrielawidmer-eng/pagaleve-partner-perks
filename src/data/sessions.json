@@ -31,7 +31,7 @@
     "id": "juridica-legal",
     "nome": "Mariana Vasconcellos",
     "cargo": "Diretora Jurídica da Pagaleve",
-    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=mariana",
+    "foto": "/src/assets/mariana-vasconcellos.png",
     "tema": "Consultoria Jurídica",
     "pitch": "Tenha clareza sobre as regras do jogo. Nossa diretoria jurídica te orienta sobre contratos, direitos do consumidor e regulamentações financeiras — para seu negócio crescer com segurança.",
     "valores": [
