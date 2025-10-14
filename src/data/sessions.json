@@ -3,7 +3,7 @@
     "id": "estrategia-ceo",
     "nome": "Henrique Weaver",
     "cargo": "CEO da Pagaleve",
-    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=henrique",
+    "foto": "/src/assets/henrique-weaver.jpeg",
     "tema": "Consultoria Estratégica",
     "pitch": "Uma conversa sobre futuro. Tenha a oportunidade rara de discutir sua visão de negócio com o CEO da Pagaleve — insights sobre inovação, cultura e decisões que moldam empresas vencedoras.",
     "valores": [
