@@ -110,30 +110,29 @@ const ExecutiveSessionModal = ({ session, isOpen, onClose }: ExecutiveSessionMod
                 </p>
               </div>
 
-              {/* Valores */}
-              <div>
+              {/* Regras */}
+              <div className="bg-primary/5 border border-primary/20 rounded-xl p-5">
                 <h4 className="font-semibold text-foreground mb-4">
-                  Valor para o lojista:
+                  Regras para participação:
                 </h4>
                 <ul className="space-y-3">
-                  {session.valores.map((valor, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <span className="text-primary text-xl mt-0.5">•</span>
-                      <span className="text-muted-foreground flex-1">{valor}</span>
-                    </li>
-                  ))}
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
+                    <span className="text-muted-foreground flex-1">Esta mentoria é exclusiva para embaixadores Pagaleve</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
+                    <span className="text-muted-foreground flex-1">Duração de 1 hora</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
+                    <span className="text-muted-foreground flex-1">Pode ser realizada apenas 1 vez a cada semestre</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
+                    <span className="text-muted-foreground flex-1">Após o envio da solicitação, avaliaremos as datas disponíveis e enviaremos o melhor horário por e-mail. O agendamento não é automático</span>
+                  </li>
                 </ul>
-              </div>
-
-              {/* Exemplo de entrega */}
-              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
-                <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-                  <Calendar className="w-5 h-5 text-primary" />
-                  Exemplo de entrega
-                </h4>
-                <p className="text-sm text-muted-foreground">
-                  {session.exemplo}
-                </p>
               </div>
 
               {/* Action Buttons */}
