@@ -1,5 +1,3 @@
-import { Heart } from "lucide-react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -79,7 +77,7 @@ const Footer = () => {
 
           {/* Divider */}
           <div className="border-t border-border pt-8">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
               {/* Legal */}
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <a href="#" className="hover:text-primary transition-colors">
@@ -93,13 +91,6 @@ const Footer = () => {
                 <a href="#" className="hover:text-primary transition-colors">
                   Regulamento
                 </a>
-              </div>
-
-              {/* Made with love */}
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span>Feito com</span>
-                <Heart className="w-4 h-4 text-primary fill-primary" />
-                <span>pela equipe Pagaleve</span>
               </div>
             </div>
           </div>
