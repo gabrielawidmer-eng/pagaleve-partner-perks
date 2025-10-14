@@ -45,7 +45,7 @@
     "id": "operacional-coo",
     "nome": "Guilherme Cirno",
     "cargo": "Diretor de Operações Pagaleve",
-    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=guilherme",
+    "foto": "/src/assets/guilherme-cirno.png",
     "tema": "Consultoria Operacional",
     "pitch": "Transforme suas rotinas em resultados. Nossa equipe de operações te ajuda a identificar gargalos, otimizar processos e aumentar produtividade com base em dados reais.",
     "valores": [
