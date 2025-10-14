@@ -2,6 +2,12 @@ import { useState } from "react";
 import { Calendar } from "lucide-react";
 import sessionsData from "@/data/sessions.json";
 import ExecutiveSessionModal from "./ExecutiveSessionModal";
+import henriqueWeaver from "@/assets/henrique-weaver.jpeg";
+import danielaSantos from "@/assets/daniela-santos.png";
+import marianaVasconcellos from "@/assets/mariana-vasconcellos.png";
+import guilhermeCirno from "@/assets/guilherme-cirno.png";
+import eduardoZucareli from "@/assets/eduardo-zucareli.png";
+import allan from "@/assets/allan.jpeg";
 
 interface ExecutiveSession {
   id: string;
@@ -17,6 +23,15 @@ interface ExecutiveSession {
 const ExecutiveSessions = () => {
   const [selectedSession, setSelectedSession] = useState<ExecutiveSession | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const imageMap: { [key: string]: string } = {
+    "/src/assets/henrique-weaver.jpeg": henriqueWeaver,
+    "/src/assets/daniela-santos.png": danielaSantos,
+    "/src/assets/mariana-vasconcellos.png": marianaVasconcellos,
+    "/src/assets/guilherme-cirno.png": guilhermeCirno,
+    "/src/assets/eduardo-zucareli.png": eduardoZucareli,
+    "/src/assets/allan.jpeg": allan,
+  };
 
   const handleSessionClick = (session: ExecutiveSession) => {
     setSelectedSession(session);
@@ -56,7 +71,7 @@ const ExecutiveSessions = () => {
               {/* Photo */}
               <div className="flex justify-center mb-4">
                 <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/40 transition-colors">
-                  <img src={session.foto} alt={session.nome} className="w-full h-full object-cover" />
+                  <img src={imageMap[session.foto] || session.foto} alt={session.nome} className="w-full h-full object-cover" />
                 </div>
               </div>
 

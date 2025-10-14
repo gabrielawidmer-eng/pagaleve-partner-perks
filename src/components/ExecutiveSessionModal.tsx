@@ -15,6 +15,12 @@ import { toast } from "sonner";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import henriqueWeaver from "@/assets/henrique-weaver.jpeg";
+import danielaSantos from "@/assets/daniela-santos.png";
+import marianaVasconcellos from "@/assets/mariana-vasconcellos.png";
+import guilhermeCirno from "@/assets/guilherme-cirno.png";
+import eduardoZucareli from "@/assets/eduardo-zucareli.png";
+import allan from "@/assets/allan.jpeg";
 
 interface ExecutiveSession {
   id: string;
@@ -45,6 +51,15 @@ type FormData = z.infer<typeof formSchema>;
 
 const ExecutiveSessionModal = ({ session, isOpen, onClose }: ExecutiveSessionModalProps) => {
   const [showForm, setShowForm] = useState(false);
+  
+  const imageMap: { [key: string]: string } = {
+    "/src/assets/henrique-weaver.jpeg": henriqueWeaver,
+    "/src/assets/daniela-santos.png": danielaSantos,
+    "/src/assets/mariana-vasconcellos.png": marianaVasconcellos,
+    "/src/assets/guilherme-cirno.png": guilhermeCirno,
+    "/src/assets/eduardo-zucareli.png": eduardoZucareli,
+    "/src/assets/allan.jpeg": allan,
+  };
   
   const {
     register,
@@ -87,7 +102,7 @@ const ExecutiveSessionModal = ({ session, isOpen, onClose }: ExecutiveSessionMod
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
                   <img 
-                    src={session.foto} 
+                    src={imageMap[session.foto] || session.foto}
                     alt={session.nome}
                     className="w-full h-full object-cover"
                   />
