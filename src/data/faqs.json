@@ -36,6 +36,11 @@
   },
   {
     "id": "8",
+    "pergunta": "Como funcionam as Sessões Executivas Pagaleve?",
+    "resposta": "As Sessões Executivas são mentorias exclusivas de 1 hora com diretores da Pagaleve, disponíveis apenas para embaixadores. Você pode participar de 1 sessão a cada semestre. Após enviar sua solicitação de agendamento, nossa equipe avaliará as datas disponíveis e enviará o melhor horário por e-mail. O agendamento não é automático e está sujeito à disponibilidade dos executivos."
+  },
+  {
+    "id": "9",
     "pergunta": "Minha empresa pode se tornar parceira do clube?",
     "resposta": "Sim! Se sua empresa oferece soluções relevantes para e-commerce, adoraríamos tê-la como parceira. Clique em 'Quero oferecer um benefício' e preencha o formulário de interesse."
   }
