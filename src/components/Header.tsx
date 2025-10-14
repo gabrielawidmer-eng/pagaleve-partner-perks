@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import logoPagaleve from "@/assets/logo-pagaleve.png";
 
 const Header = () => {
+  const navigate = useNavigate();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -63,7 +65,16 @@ const Header = () => {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex items-center gap-4">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => navigate("/auth")}
+              className="text-muted-foreground hover:text-primary"
+            >
+              <Lock className="w-4 h-4 mr-2" />
+              Admin
+            </Button>
             <Button
               onClick={() => scrollToSection("beneficios")}
               size="lg"
@@ -99,6 +110,15 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={() => navigate("/auth")}
+                className="text-muted-foreground hover:text-primary w-full justify-start"
+              >
+                <Lock className="w-4 h-4 mr-2" />
+                Admin
+              </Button>
               <Button
                 onClick={() => scrollToSection("beneficios")}
                 size="lg"
