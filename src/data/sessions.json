@@ -1,0 +1,86 @@
+[
+  {
+    "id": "estrategia-ceo",
+    "nome": "Henrique Weaver",
+    "cargo": "CEO da Pagaleve",
+    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=henrique",
+    "tema": "Consultoria Estratégica",
+    "pitch": "Uma conversa sobre futuro. Tenha a oportunidade rara de discutir sua visão de negócio com o CEO da Pagaleve — insights sobre inovação, cultura e decisões que moldam empresas vencedoras.",
+    "valores": [
+      "Discussão de modelo de negócio, posicionamento e diferenciação",
+      "Direcionamento estratégico de crescimento e inovação",
+      "Mentoria sobre liderança e expansão"
+    ],
+    "exemplo": "Sessão estratégica sobre visão de longo prazo e desafios do mercado de meios de pagamento."
+  },
+  {
+    "id": "financeira-cfo",
+    "nome": "Daniela dos Santos",
+    "cargo": "CFO da Pagaleve",
+    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=daniela",
+    "tema": "Consultoria Financeira",
+    "pitch": "Entenda o que realmente move o caixa do seu negócio. Nossa diretoria financeira te ajuda a otimizar margens, planejar fluxo de caixa e estruturar estratégias para crescer de forma sustentável.",
+    "valores": [
+      "Diagnóstico financeiro de margem, custos e precificação",
+      "Estratégias de capital de giro e gestão de fluxo de caixa",
+      "Boas práticas de controle financeiro e expansão"
+    ],
+    "exemplo": "Análise de DRE simplificada + simulação de impacto de parcelamento no fluxo de caixa."
+  },
+  {
+    "id": "juridica-legal",
+    "nome": "Mariana Vasconcellos",
+    "cargo": "Diretora Jurídica da Pagaleve",
+    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=mariana",
+    "tema": "Consultoria Jurídica",
+    "pitch": "Tenha clareza sobre as regras do jogo. Nossa diretoria jurídica te orienta sobre contratos, direitos do consumidor e regulamentações financeiras — para seu negócio crescer com segurança.",
+    "valores": [
+      "Análise contratual de termos de e-commerce",
+      "Dúvidas sobre LGPD e proteção de dados",
+      "Revisão de políticas de trocas e devoluções"
+    ],
+    "exemplo": "Diagnóstico jurídico simplificado com orientações sobre adequação à LGPD e boas práticas de conformidade digital."
+  },
+  {
+    "id": "operacional-coo",
+    "nome": "Guilherme Cirno",
+    "cargo": "Diretor de Operações Pagaleve",
+    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=guilherme",
+    "tema": "Consultoria Operacional",
+    "pitch": "Transforme suas rotinas em resultados. Nossa equipe de operações te ajuda a identificar gargalos, otimizar processos e aumentar produtividade com base em dados reais.",
+    "valores": [
+      "Diagnóstico de jornada operacional (pedido, pagamento, entrega)",
+      "Sugestões para reduzir SLA e retrabalho",
+      "Estruturação de processos internos mais escaláveis"
+    ],
+    "exemplo": "Mapeamento de jornada do pedido e recomendações para automação e performance operacional."
+  },
+  {
+    "id": "comercial-cco",
+    "nome": "Eduardo Zucareli",
+    "cargo": "CCO Pagaleve",
+    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=eduardo",
+    "tema": "Consultoria Comercial",
+    "pitch": "Venda mais e melhor. Nossa diretoria comercial te ajuda a identificar oportunidades de crescimento, novas parcerias e estratégias de posicionamento no mercado.",
+    "valores": [
+      "Estratégias de aumento de conversão no checkout",
+      "Sugestões de cross-sell e fidelização",
+      "Diagnóstico de performance de vendas e precificação"
+    ],
+    "exemplo": "Benchmarking de performance e plano de crescimento comercial sob medida."
+  },
+  {
+    "id": "ciberseguranca-tech",
+    "nome": "Diretoria de Tecnologia/Risco",
+    "cargo": "Especialistas em Cibersegurança",
+    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=security",
+    "tema": "Consultoria em Cibersegurança",
+    "pitch": "Proteja o que mais importa. Nosso time de segurança pode revisar seu site ou ambiente digital e indicar vulnerabilidades e boas práticas para proteger seu negócio e seus clientes.",
+    "valores": [
+      "Diagnóstico de vulnerabilidades no site",
+      "Orientações sobre autenticação e segurança de dados",
+      "Recomendações para mitigar riscos de fraude"
+    ],
+    "exemplo": "Security review do site do lojista com checklist de boas práticas e plano de ação."
+  }
+]
