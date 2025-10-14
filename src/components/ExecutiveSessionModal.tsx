@@ -113,24 +113,24 @@ const ExecutiveSessionModal = ({ session, isOpen, onClose }: ExecutiveSessionMod
               {/* Regras */}
               <div className="bg-primary/5 border border-primary/20 rounded-xl p-5">
                 <h4 className="font-semibold text-foreground mb-4">
-                  Regras para participação:
+                  Regras de Participação
                 </h4>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
-                    <span className="text-muted-foreground flex-1">Esta mentoria é exclusiva para embaixadores Pagaleve</span>
+                    <span className="text-muted-foreground flex-1">Exclusiva para Embaixadores Pagaleve</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
-                    <span className="text-muted-foreground flex-1">Duração de 1 hora</span>
+                    <span className="text-muted-foreground flex-1">Duração de 1 hora por sessão</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
-                    <span className="text-muted-foreground flex-1">Pode ser realizada apenas 1 vez a cada semestre</span>
+                    <span className="text-muted-foreground flex-1">Limite de uma mentoria por semestre</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
-                    <span className="text-muted-foreground flex-1">Após o envio da solicitação, avaliaremos as datas disponíveis e enviaremos o melhor horário por e-mail. O agendamento não é automático</span>
+                    <span className="text-muted-foreground flex-1">Após o envio da solicitação, nossa equipe verificará as disponibilidades e entrará em contato por e-mail com a melhor data e horário. (O agendamento não é automático.)</span>
                   </li>
                 </ul>
               </div>
