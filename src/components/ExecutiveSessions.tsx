@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Calendar, Sparkles } from "lucide-react";
+import { Calendar } from "lucide-react";
 import sessionsData from "@/data/sessions.json";
 import ExecutiveSessionModal from "./ExecutiveSessionModal";
 
@@ -33,10 +33,7 @@ const ExecutiveSessions = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Sparkles className="w-8 h-8 text-primary" />
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">Sessões Executivas Pagaleve</h2>
-          </div>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4">Sessões Executivas Pagaleve</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-6 leading-relaxed">
             Os nossos <b>embaixadores</b> agora têm acesso a um benefício inédito: uma hora de mentoria com diretores da
             Pagaleve. Cada sessão é uma oportunidade para discutir seu negócio com especialistas que vivem a
