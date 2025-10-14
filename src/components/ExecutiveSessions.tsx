@@ -35,19 +35,16 @@ const ExecutiveSessions = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="w-8 h-8 text-primary" />
-            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">
-              Sessões Executivas Pagaleve
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold text-foreground">Sessões Executivas Pagaleve</h2>
           </div>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto mb-6 leading-relaxed">
-            Os Embaixadores da Pagaleve agora têm acesso a um benefício inédito: uma hora de mentoria 
-            com diretores da Pagaleve. Cada sessão é uma oportunidade para discutir seu negócio com 
-            especialistas que vivem a transformação do varejo e da tecnologia todos os dias.
+            Os nossos <b>embaixadores</b> agora têm acesso a um benefício inédito: uma hora de mentoria com diretores da
+            Pagaleve. Cada sessão é uma oportunidade para discutir seu negócio com especialistas que vivem a
+            transformação do varejo e da tecnologia todos os dias.
           </p>
           <p className="text-lg text-foreground font-semibold flex items-center justify-center gap-2">
-            <span className="text-2xl">💡</span>
-            Escolha o tema mais estratégico para o seu momento e acelere o crescimento da sua loja 
-            com quem entende do assunto.
+            Escolha o tema mais estratégico para o seu momento e acelere o crescimento da sua loja com quem entende do
+            assunto.
           </p>
         </div>
 
@@ -62,18 +59,12 @@ const ExecutiveSessions = () => {
               {/* Photo */}
               <div className="flex justify-center mb-4">
                 <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-primary/20 group-hover:border-primary/40 transition-colors">
-                  <img 
-                    src={session.foto} 
-                    alt={session.nome}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={session.foto} alt={session.nome} className="w-full h-full object-cover" />
                 </div>
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-heading font-bold text-primary mb-2 text-center">
-                {session.tema}
-              </h3>
+              <h3 className="text-xl font-heading font-bold text-primary mb-2 text-center">{session.tema}</h3>
 
               {/* Name and Position */}
               <div className="text-center mb-4">
@@ -82,9 +73,7 @@ const ExecutiveSessions = () => {
               </div>
 
               {/* Pitch */}
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-4">
-                {session.pitch}
-              </p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-4">{session.pitch}</p>
 
               {/* Valores */}
               <ul className="space-y-2 mb-4">
@@ -98,12 +87,8 @@ const ExecutiveSessions = () => {
 
               {/* Example */}
               <div className="bg-primary/5 rounded-lg p-3 mb-4">
-                <p className="text-xs text-muted-foreground font-semibold mb-1">
-                  Exemplo de entrega:
-                </p>
-                <p className="text-xs text-muted-foreground line-clamp-2">
-                  {session.exemplo}
-                </p>
+                <p className="text-xs text-muted-foreground font-semibold mb-1">Exemplo de entrega:</p>
+                <p className="text-xs text-muted-foreground line-clamp-2">{session.exemplo}</p>
               </div>
 
               {/* CTA Button */}
@@ -117,11 +102,7 @@ const ExecutiveSessions = () => {
       </div>
 
       {/* Modal */}
-      <ExecutiveSessionModal 
-        session={selectedSession}
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
-      />
+      <ExecutiveSessionModal session={selectedSession} isOpen={isModalOpen} onClose={handleCloseModal} />
     </section>
   );
 };
