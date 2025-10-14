@@ -70,7 +70,23 @@ const ExecutiveSessions = () => {
               </div>
 
               {/* Pitch */}
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-6">{session.pitch}</p>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed line-clamp-3">{session.tema}</p>
+
+              {/* Valores */}
+              <ul className="space-y-2 mb-4">
+                {session.valores.slice(0, 3).map((valor, index) => (
+                  <li key={index} className="flex items-start gap-2 text-xs text-muted-foreground">
+                    <span className="text-primary mt-0.5">•</span>
+                    <span className="flex-1 line-clamp-2">{valor}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Example */}
+              <div className="bg-primary/5 rounded-lg p-3 mb-4">
+                <p className="text-xs text-muted-foreground font-semibold mb-1">Exemplo de entrega:</p>
+                <p className="text-xs text-muted-foreground line-clamp-2">{session.exemplo}</p>
+              </div>
 
               {/* CTA Button */}
               <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-4 rounded-full transition-colors flex items-center justify-center gap-2 group-hover:shadow-lg">

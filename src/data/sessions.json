@@ -6,8 +6,12 @@
     "foto": "/src/assets/henrique-weaver.jpeg",
     "tema": "Consultoria Estratégica",
     "pitch": "Co-fundador e CEO da Pagaleve, fintech pioneira em BNPL no Brasil. Ex-Uber, OYO e McKinsey. Liderou a Pagaleve a alcançar mais de R$ 1 bilhão em volume de pagamentos e EBITDA positivo, com crescimento de 8x ao ano. Especialista em transformação do varejo e pagamentos digitais.",
-    "valores": [],
-    "exemplo": ""
+    "valores": [
+      "Discussão de modelo de negócio, posicionamento e diferenciação",
+      "Direcionamento estratégico de crescimento e inovação",
+      "Mentoria sobre liderança e expansão"
+    ],
+    "exemplo": "Sessão estratégica sobre visão de longo prazo e desafios do mercado de meios de pagamento."
   },
   {
     "id": "financeira-cfo",
@@ -16,8 +20,12 @@
     "foto": "/src/assets/daniela-santos.png",
     "tema": "Consultoria Financeira",
     "pitch": "Chief Financial Officer da Pagaleve com mais de 25 anos de experiência em finanças corporativas. Passou por empresas como Submarino, KPMG e Banco CCF Brasil. Especialista em planejamento financeiro, gestão de caixa e estruturação de crescimento sustentável em e-commerce e fintechs.",
-    "valores": [],
-    "exemplo": ""
+    "valores": [
+      "Diagnóstico financeiro de margem, custos e precificação",
+      "Estratégias de capital de giro e gestão de fluxo de caixa",
+      "Boas práticas de controle financeiro e expansão"
+    ],
+    "exemplo": "Análise de DRE simplificada + simulação de impacto de parcelamento no fluxo de caixa."
   },
   {
     "id": "juridica-legal",
@@ -26,8 +34,12 @@
     "foto": "/src/assets/mariana-vasconcellos.png",
     "tema": "Consultoria Jurídica",
     "pitch": "Diretora Jurídica e Regulatório da Pagaleve, especialista em meios de pagamento, BNPL e fintechs. Ampla experiência em compliance, LGPD, contratos digitais e regulamentação financeira. Lidera as estratégias jurídicas para garantir segurança e conformidade no ecossistema de pagamentos.",
-    "valores": [],
-    "exemplo": ""
+    "valores": [
+      "Análise contratual de termos de e-commerce",
+      "Dúvidas sobre LGPD e proteção de dados",
+      "Revisão de políticas de trocas e devoluções"
+    ],
+    "exemplo": "Diagnóstico jurídico simplificado com orientações sobre adequação à LGPD e boas práticas de conformidade digital."
   },
   {
     "id": "operacional-coo",
@@ -36,8 +48,12 @@
     "foto": "/src/assets/guilherme-cirno.png",
     "tema": "Consultoria Operacional",
     "pitch": "Diretor de Operações da Pagaleve com expertise em operações comerciais, revenue operations e parcerias estratégicas. Experiência prévia em Forever Liss, OYO e Ambev. Especialista em otimização de processos, performance operacional e escalabilidade de negócios digitais.",
-    "valores": [],
-    "exemplo": ""
+    "valores": [
+      "Diagnóstico de jornada operacional (pedido, pagamento, entrega)",
+      "Sugestões para reduzir SLA e retrabalho",
+      "Estruturação de processos internos mais escaláveis"
+    ],
+    "exemplo": "Mapeamento de jornada do pedido e recomendações para automação e performance operacional."
   },
   {
     "id": "comercial-cco",
@@ -46,8 +62,12 @@
     "foto": "/src/assets/eduardo-zucareli.png",
     "tema": "Consultoria Comercial",
     "pitch": "Chief Commercial Officer da Pagaleve, VP de Operações e Comercial com vasta experiência em liderança executiva. Especialista em desenvolvimento de equipes, estratégias comerciais, operações e parcerias. Foco em crescimento sustentável e excelência operacional.",
-    "valores": [],
-    "exemplo": ""
+    "valores": [
+      "Estratégias de aumento de conversão no checkout",
+      "Sugestões de cross-sell e fidelização",
+      "Diagnóstico de performance de vendas e precificação"
+    ],
+    "exemplo": "Benchmarking de performance e plano de crescimento comercial sob medida."
   },
   {
     "id": "ciberseguranca-tech",
@@ -56,7 +76,11 @@
     "foto": "/src/assets/allan.jpeg",
     "tema": "Consultoria em Cibersegurança",
     "pitch": "Head of CyberSecurity and IT na Pagaleve, certificado CISM (Certified Information Security Manager) pela ISACA. Especialista em segurança da informação, gestão de riscos cibernéticos e proteção de infraestrutura de TI em fintechs. Foco em mitigação de vulnerabilidades e compliance.",
-    "valores": [],
-    "exemplo": ""
+    "valores": [
+      "Diagnóstico de vulnerabilidades no site",
+      "Orientações sobre autenticação e segurança de dados",
+      "Recomendações para mitigar riscos de fraude"
+    ],
+    "exemplo": "Security review do site do lojista com checklist de boas práticas e plano de ação."
   }
 ]
