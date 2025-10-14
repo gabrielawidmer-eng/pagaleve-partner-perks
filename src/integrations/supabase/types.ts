@@ -14,16 +14,105 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      benefits: {
+        Row: {
+          additional_info: string | null
+          benefit_type: Database["public"]["Enums"]["benefit_type"]
+          category: Database["public"]["Enums"]["benefit_category"]
+          company_contact: string | null
+          company_name: string
+          company_summary: string | null
+          company_website: string | null
+          created_at: string | null
+          description: string
+          id: string
+          is_active: boolean | null
+          logo_url: string | null
+          name: string
+          redemption_link: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          additional_info?: string | null
+          benefit_type: Database["public"]["Enums"]["benefit_type"]
+          category: Database["public"]["Enums"]["benefit_category"]
+          company_contact?: string | null
+          company_name: string
+          company_summary?: string | null
+          company_website?: string | null
+          created_at?: string | null
+          description: string
+          id?: string
+          is_active?: boolean | null
+          logo_url?: string | null
+          name: string
+          redemption_link?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          additional_info?: string | null
+          benefit_type?: Database["public"]["Enums"]["benefit_type"]
+          category?: Database["public"]["Enums"]["benefit_category"]
+          company_contact?: string | null
+          company_name?: string
+          company_summary?: string | null
+          company_website?: string | null
+          created_at?: string | null
+          description?: string
+          id?: string
+          is_active?: boolean | null
+          logo_url?: string | null
+          name?: string
+          redemption_link?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string | null
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "user"
+      benefit_category:
+        | "marketing"
+        | "logistica"
+        | "financas"
+        | "ferramentas"
+        | "tecnologia"
+        | "recursos_humanos"
+        | "outro"
+      benefit_type: "desconto" | "credito" | "gratuidade" | "mentoria" | "outro"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +239,18 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "user"],
+      benefit_category: [
+        "marketing",
+        "logistica",
+        "financas",
+        "ferramentas",
+        "tecnologia",
+        "recursos_humanos",
+        "outro",
+      ],
+      benefit_type: ["desconto", "credito", "gratuidade", "mentoria", "outro"],
+    },
   },
 } as const
