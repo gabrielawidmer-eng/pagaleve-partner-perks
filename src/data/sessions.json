@@ -17,7 +17,7 @@
     "id": "financeira-cfo",
     "nome": "Daniela dos Santos",
     "cargo": "CFO da Pagaleve",
-    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=daniela",
+    "foto": "/src/assets/daniela-santos.png",
     "tema": "Consultoria Financeira",
     "pitch": "Entenda o que realmente move o caixa do seu negócio. Nossa diretoria financeira te ajuda a otimizar margens, planejar fluxo de caixa e estruturar estratégias para crescer de forma sustentável.",
     "valores": [
@@ -59,7 +59,7 @@
     "id": "comercial-cco",
     "nome": "Eduardo Zucareli",
     "cargo": "CCO Pagaleve",
-    "foto": "https://api.dicebear.com/7.x/avataaars/svg?seed=eduardo",
+    "foto": "/src/assets/eduardo-zucareli.png",
     "tema": "Consultoria Comercial",
     "pitch": "Venda mais e melhor. Nossa diretoria comercial te ajuda a identificar oportunidades de crescimento, novas parcerias e estratégias de posicionamento no mercado.",
     "valores": [
