@@ -1,7 +1,9 @@
-import { ArrowRight, Sparkles, Target, Zap, TrendingUp } from "lucide-react";
+import { ArrowRight, Sparkles, Target, Zap, TrendingUp, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import html2canvas from "html2canvas";
+import { useToast } from "@/hooks/use-toast";
 
 // Import logos
 import logoYampi from '@/assets/logo-yampi.svg';
@@ -36,9 +38,56 @@ const tierColors: Record<string, string> = {
 };
 
 const Presentation = () => {
+  const { toast } = useToast();
+
+  const handleDownloadPNG = async () => {
+    const element = document.getElementById('presentation-container');
+    if (!element) return;
+
+    toast({
+      title: "Gerando imagem...",
+      description: "Aguarde enquanto criamos seu PNG em alta qualidade.",
+    });
+
+    try {
+      const canvas = await html2canvas(element, {
+        scale: 2, // Alta qualidade (2x resolução)
+        useCORS: true,
+        logging: false,
+        backgroundColor: '#ffffff',
+      });
+
+      const link = document.createElement('a');
+      link.download = 'clube-beneficios-pagaleve.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+
+      toast({
+        title: "Download concluído!",
+        description: "Sua imagem foi baixada com sucesso.",
+      });
+    } catch (error) {
+      toast({
+        title: "Erro ao gerar imagem",
+        description: "Tente novamente ou use um screenshot manual.",
+        variant: "destructive",
+      });
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background overflow-x-auto">
-      <div className="flex flex-row h-screen w-max">
+    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background overflow-x-auto relative">
+      {/* Download Button - Fixed position */}
+      <Button
+        onClick={handleDownloadPNG}
+        className="fixed top-4 right-4 z-50 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
+        size="lg"
+      >
+        <Download className="w-5 h-5 mr-2" />
+        Baixar PNG
+      </Button>
+
+      <div id="presentation-container" className="flex flex-row h-screen w-max">
         {/* SEÇÃO 1 - HERO */}
         <section className="w-[28vw] min-w-[400px] h-screen flex flex-col justify-center items-center p-12 relative overflow-hidden border-r border-border/30">
           {/* Decorative blurs */}
