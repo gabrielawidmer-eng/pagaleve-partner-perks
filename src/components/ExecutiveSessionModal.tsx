@@ -141,7 +141,7 @@ const ExecutiveSessionModal = ({ session, isOpen, onClose }: ExecutiveSessionMod
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
-                    <span className="text-muted-foreground flex-1">Limite de uma mentoria por semestre</span>
+                    <span className="text-muted-foreground flex-1">Limite de 1 mentoria de cada tema por semestre</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-primary text-xl mt-0.5 flex-shrink-0">•</span>
