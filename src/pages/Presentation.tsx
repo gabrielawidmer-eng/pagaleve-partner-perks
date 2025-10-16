@@ -44,6 +44,12 @@ const Presentation = () => {
     const element = document.getElementById('presentation-container');
     if (!element) return;
 
+    // Hide download button temporarily
+    const downloadBtn = document.getElementById('download-btn');
+    if (downloadBtn) {
+      downloadBtn.style.display = 'none';
+    }
+
     toast({
       title: "Gerando imagem...",
       description: "Aguarde enquanto criamos seu PNG em alta qualidade.",
@@ -51,15 +57,38 @@ const Presentation = () => {
 
     try {
       const canvas = await html2canvas(element, {
-        scale: 2, // Alta qualidade (2x resolução)
+        scale: 2,
         useCORS: true,
+        allowTaint: true,
         logging: false,
-        backgroundColor: '#ffffff',
+        backgroundColor: null, // Preserve transparency for gradients
+        windowWidth: element.scrollWidth,
+        windowHeight: element.scrollHeight,
       });
+
+      // Create a new canvas with gradient background
+      const finalCanvas = document.createElement('canvas');
+      finalCanvas.width = canvas.width;
+      finalCanvas.height = canvas.height;
+      const ctx = finalCanvas.getContext('2d');
+      
+      if (ctx) {
+        // Draw gradient background
+        const gradient = ctx.createLinearGradient(0, 0, finalCanvas.width, finalCanvas.height);
+        gradient.addColorStop(0, '#ffffff');
+        gradient.addColorStop(0.5, 'rgba(139, 92, 246, 0.05)');
+        gradient.addColorStop(1, '#ffffff');
+        
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
+        
+        // Draw captured content on top
+        ctx.drawImage(canvas, 0, 0);
+      }
 
       const link = document.createElement('a');
       link.download = 'clube-beneficios-pagaleve.png';
-      link.href = canvas.toDataURL('image/png');
+      link.href = finalCanvas.toDataURL('image/png', 1.0);
       link.click();
 
       toast({
@@ -72,6 +101,11 @@ const Presentation = () => {
         description: "Tente novamente ou use um screenshot manual.",
         variant: "destructive",
       });
+    } finally {
+      // Show download button again
+      if (downloadBtn) {
+        downloadBtn.style.display = 'flex';
+      }
     }
   };
 
@@ -79,6 +113,7 @@ const Presentation = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-background overflow-x-auto relative">
       {/* Download Button - Fixed position */}
       <Button
+        id="download-btn"
         onClick={handleDownloadPNG}
         className="fixed top-4 right-4 z-50 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
         size="lg"
