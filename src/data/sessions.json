@@ -4,7 +4,7 @@
     "nome": "Henrique Weaver",
     "cargo": "CEO da Pagaleve",
     "foto": "/src/assets/henrique-weaver.jpeg",
-    "tema": "Consultoria Estratégica",
+    "tema": "Mentoria Estratégica",
     "pitch": "Co-fundador e CEO da Pagaleve, fintech pioneira em BNPL no Brasil. Ex-Uber, OYO e McKinsey. Liderou a Pagaleve a alcançar mais de R$ 1 bilhão em volume de pagamentos e EBITDA positivo, com crescimento de 8x ao ano. Especialista em transformação do varejo e pagamentos digitais.",
     "valores": [
       "Discussão de modelo de negócio, posicionamento e diferenciação",
@@ -18,7 +18,7 @@
     "nome": "Daniela dos Santos",
     "cargo": "CFO da Pagaleve",
     "foto": "/src/assets/daniela-santos.png",
-    "tema": "Consultoria Financeira",
+    "tema": "Mentoria Financeira",
     "pitch": "Chief Financial Officer da Pagaleve com mais de 25 anos de experiência em finanças corporativas. Passou por empresas como Submarino, KPMG e Banco CCF Brasil. Especialista em planejamento financeiro, gestão de caixa e estruturação de crescimento sustentável em e-commerce e fintechs.",
     "valores": [
       "Diagnóstico financeiro de margem, custos e precificação",
@@ -32,7 +32,7 @@
     "nome": "Mariana Vasconcellos",
     "cargo": "Diretora Jurídica da Pagaleve",
     "foto": "/src/assets/mariana-vasconcellos.png",
-    "tema": "Consultoria Jurídica",
+    "tema": "Mentoria Jurídica",
     "pitch": "Diretora Jurídica e Regulatório da Pagaleve, especialista em meios de pagamento, BNPL e fintechs. Ampla experiência em compliance, LGPD, contratos digitais e regulamentação financeira. Lidera as estratégias jurídicas para garantir segurança e conformidade no ecossistema de pagamentos.",
     "valores": [
       "Análise contratual de termos de e-commerce",
@@ -46,7 +46,7 @@
     "nome": "Guilherme Cirno",
     "cargo": "Diretor de Operações Pagaleve",
     "foto": "/src/assets/guilherme-cirno.png",
-    "tema": "Consultoria Operacional",
+    "tema": "Mentoria Operacional",
     "pitch": "Diretor de Operações da Pagaleve com expertise em operações comerciais, revenue operations e parcerias estratégicas. Experiência prévia em Forever Liss, OYO e Ambev. Especialista em otimização de processos, performance operacional e escalabilidade de negócios digitais.",
     "valores": [
       "Diagnóstico de jornada operacional (pedido, pagamento, entrega)",
@@ -60,7 +60,7 @@
     "nome": "Eduardo Zucareli",
     "cargo": "CCO Pagaleve",
     "foto": "/src/assets/eduardo-zucareli.png",
-    "tema": "Consultoria Comercial",
+    "tema": "Mentoria Comercial",
     "pitch": "Chief Commercial Officer da Pagaleve, VP de Operações e Comercial com vasta experiência em liderança executiva. Especialista em desenvolvimento de equipes, estratégias comerciais, operações e parcerias. Foco em crescimento sustentável e excelência operacional.",
     "valores": [
       "Estratégias de aumento de conversão no checkout",
@@ -74,7 +74,7 @@
     "nome": "Allan Pelais",
     "cargo": "Head of CyberSecurity and IT na Pagaleve",
     "foto": "/src/assets/allan.jpeg",
-    "tema": "Consultoria em Cibersegurança",
+    "tema": "Mentoria em Cibersegurança",
     "pitch": "Head of CyberSecurity and IT na Pagaleve, certificado CISM (Certified Information Security Manager) pela ISACA. Especialista em segurança da informação, gestão de riscos cibernéticos e proteção de infraestrutura de TI em fintechs. Foco em mitigação de vulnerabilidades e compliance.",
     "valores": [
       "Diagnóstico de vulnerabilidades no site",
