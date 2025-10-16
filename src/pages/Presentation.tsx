@@ -61,34 +61,14 @@ const Presentation = () => {
         useCORS: true,
         allowTaint: true,
         logging: false,
-        backgroundColor: null, // Preserve transparency for gradients
+        backgroundColor: '#ffffff',
         windowWidth: element.scrollWidth,
         windowHeight: element.scrollHeight,
       });
 
-      // Create a new canvas with gradient background
-      const finalCanvas = document.createElement('canvas');
-      finalCanvas.width = canvas.width;
-      finalCanvas.height = canvas.height;
-      const ctx = finalCanvas.getContext('2d');
-      
-      if (ctx) {
-        // Draw gradient background
-        const gradient = ctx.createLinearGradient(0, 0, finalCanvas.width, finalCanvas.height);
-        gradient.addColorStop(0, '#ffffff');
-        gradient.addColorStop(0.5, 'rgba(139, 92, 246, 0.05)');
-        gradient.addColorStop(1, '#ffffff');
-        
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
-        
-        // Draw captured content on top
-        ctx.drawImage(canvas, 0, 0);
-      }
-
       const link = document.createElement('a');
       link.download = 'clube-beneficios-pagaleve.png';
-      link.href = finalCanvas.toDataURL('image/png', 1.0);
+      link.href = canvas.toDataURL('image/png', 1.0);
       link.click();
 
       toast({
